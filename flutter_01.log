@@ -1,0 +1,63 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --machine --start-paused -d chrome --devtools-server-address http://127.0.0.1:9100/ --target lib/main.dart
+
+## exception
+
+StateError: Bad state: No context with the running Dart application.
+
+```
+#0      RemoteDebuggerExecutionContext.id (package:dwds/src/debugging/execution_context.dart:55:7)
+<asynchronous suspension>
+#1      AppInspector._getExtensionRpcs (package:dwds/src/debugging/inspector.dart:538:20)
+<asynchronous suspension>
+#2      AppInspector._initialize (package:dwds/src/debugging/inspector.dart:97:34)
+<asynchronous suspension>
+#3      AppInspector.initialize (package:dwds/src/debugging/inspector.dart:160:5)
+<asynchronous suspension>
+#4      ChromeProxyService.createIsolate (package:dwds/src/services/chrome_proxy_service.dart:216:18)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 2.10.4, on Ubuntu 20.04.2 LTS 5.8.0-43-generic, locale en_US.UTF-8)
+    • Flutter version 2.10.4 at /home/yusuf/flutter/flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision c860cba910 (5 weeks ago), 2022-03-25 00:23:12 -0500
+    • Engine revision 57d3bac3dd
+    • Dart version 2.16.2
+    • DevTools version 2.9.2
+
+[✗] Android toolchain - develop for Android devices
+    ✗ Unable to locate Android SDK.
+      Install Android Studio from: https://developer.android.com/studio/index.html
+      On first launch it will assist you in installing the Android SDK components.
+      (or visit https://flutter.dev/docs/get-started/install/linux#android-setup for detailed instructions).
+      If the Android SDK has been installed to a custom location, please use
+      `flutter config --android-sdk` to update to that location.
+
+
+[✓] Chrome - develop for the web
+    • Chrome at google-chrome
+
+[!] Android Studio (not installed)
+    • Android Studio not found; download from https://developer.android.com/studio/index.html
+      (or visit https://flutter.dev/docs/get-started/install/linux#android-setup for detailed instructions).
+
+[✓] VS Code
+    • VS Code at /snap/code/current
+    • Flutter extension version 3.38.1
+
+[✓] Connected device (1 available)
+    • Chrome (web) • chrome • web-javascript • Google Chrome 100.0.4896.88
+
+[✓] HTTP Host Availability
+    • All required HTTP hosts are available
+
+! Doctor found issues in 2 categories.
+```
