@@ -22,7 +22,7 @@ class _RaywenderlichStack extends State<RaywenderlichStack> {
     return Stack(
       children: [
         WebView(
-          initialUrl: 'https://www.raywenderlich.com/',
+          initialUrl: 'https://github.com/yuzalsif',
           onPageStarted: (url) {
             setState(() {
               percentageProgress = 0;

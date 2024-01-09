@@ -46,6 +46,7 @@ class FooderLich extends StatelessWidget {
 
               return MaterialApp.router(
                 routeInformationParser: router.routeInformationParser,
+                routeInformationProvider: router.routeInformationProvider,
                 routerDelegate: router.routerDelegate,
                 debugShowCheckedModeBanner: false,
                 theme: theme,

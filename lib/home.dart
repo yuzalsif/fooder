@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
       builder: (context, tabManager, child) {
         return Scaffold(
           appBar: AppBar(
-            title: const Center(child: Text('Fooderlich')),
+            title: const Text('Fooderlich'),
             actions: [buildProfileButton()],
           ),
           body: IndexedStack(index: tabManager.currentTab, children: pages),
@@ -65,7 +65,7 @@ class _HomeState extends State<Home> {
       ),
       child: GestureDetector(
         child: const CircleAvatar(
-          backgroundImage: AssetImage('assets/profile_pics/person_stef.jpeg'),
+          backgroundImage: AssetImage('assets/profile_pics/yusuf.jpg'),
           backgroundColor: Colors.transparent,
         ),
         onTap: () {

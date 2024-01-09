@@ -61,13 +61,6 @@ class FooderLichTheme {
   static ThemeData light() {
     return ThemeData(
       brightness: Brightness.light,
-      checkboxTheme: CheckboxThemeData(
-        fillColor: MaterialStateColor.resolveWith(
-          (states) {
-            return Colors.black;
-          },
-        ),
-      ),
       appBarTheme: const AppBarTheme(
         foregroundColor: Colors.white,
         backgroundColor: Colors.black,

@@ -45,19 +45,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   Widget buildProfile() {
-    return Column(
-      children: const [
+    return const Column(
+      children: [
         CircularImage(
-          imageProvider: AssetImage('assets/profile_pics/person_stef.jpeg'),
+          imageProvider: AssetImage('assets/profile_pics/yusuf.jpg'),
           imageRadius: 60,
         ),
         SizedBox(height: 16.0),
         Text(
-          'Stefania',
+          'Yusuf',
           style: TextStyle(fontSize: 21),
         ),
         Text(
-          'Pythonista',
+          'Flutter Dev',
         ),
         Text(
           '100 points',
@@ -94,12 +94,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
         children: [
           buildDarkMode(manager),
           ListTile(
-            title: const Text('View Raywenderlich.com'),
+            title: const Text('View Github Profile'),
             trailing: const Icon(FontAwesomeIcons.book),
             onTap: () async {
               if (kIsWeb) {
                 await launchUrl(
-                  Uri.parse('https://www.raywenderlich.com/'),
+                  Uri.parse('https://github.com/yuzalsif'),
                 );
               } else {
                 navigation.router.goNamed('raywenderlich');

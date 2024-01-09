@@ -3,6 +3,7 @@
 // Generated file. Do not edit.
 //
 
+// @dart = 2.13
 // ignore_for_file: type=lint
 
 import 'package:url_launcher_web/url_launcher_web.dart';

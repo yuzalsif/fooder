@@ -196,10 +196,11 @@ class _GroceryItemScreenState extends State<GroceryItemScreen> {
               Importance.high,
             ].map(
               (chip) => ChoiceChip(
-                selectedColor: Colors.black,
+                // selectedColor: Colors.black,
+                backgroundColor: Colors.black.withOpacity(0.3),
                 label: Text(
                   chip.name,
-                  style: const TextStyle(color: Colors.white),
+                  // style: const TextStyle(color: Colors.white),
                 ),
                 selected: _importance == chip,
                 onSelected: (selected) {
